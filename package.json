@@ -1,0 +1,22 @@
+{
+  "name": "sass-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for sass + webpack",
+  "repository": "https://github.com/roninJosue/sass-webpack-boilerplate.git",
+  "author": "roninJosue",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "node-sass": "^4.14.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open"
+  }
+}
