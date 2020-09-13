@@ -1,0 +1,111 @@
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .u-center-text {
+    text-align: center !important;
+  }
+  
+  .u-margin-bottom-medium {
+    margin-bottom: 4rem !important;
+  
+    @include respond(tab-port) {
+      margin-bottom: 3rem !important;
+    }
+  }
+  
+  .u-margin-bottom-big {
+    margin-bottom: 8rem !important;
+  
+    @include respond(tab-port) {
+      margin-bottom: 5rem !important;
+    }
+  }
+  
+  .group {
+    display: flex;
+    align-items: center;
+  
+    @include respond(phone){
+      flex-direction: column;
+    }
+  }
+  
+  .h2 {
+    color: #fa5652;
+    font-weight: bold;
+    font-family: 'RedHatDisplay', sans-serif;
+    font-size: 2.5rem;
+  
+    @include respond(phone){
+      text-align: center;
+    }
+  
+    &--size-2 {
+      font-size: 2.8rem;
+    }
+  
+    &--greater {
+      font-size: 5rem;
+      text-transform: capitalize;
+    }
+  
+    &--medium {
+      font-size: 4rem;
+      text-transform: capitalize;
+    }
+  
+    &--medium-2 {
+      font-size: 4.5rem;
+      text-transform: capitalize;
+    }
+  
+    &--color-2 {
+      color: $color-text-primary;
+    }
+  }
+  
+  .paragraph {
+    width: 70%;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    color: $color-tertiary;
+  
+    @include respond(phone){
+      width: 100%!important;
+    }
+  
+    &--2 {
+      width: 50%;
+      margin: 0 auto;
+    }
+  
+    &--3 {
+      width: 80%;
+    }
+  
+    &--center {
+      text-align: center;
+    }
+  }
+  
+  .separator {
+    background-color: $color-separator;
+    height: 1.4rem;
+    width: .22rem;
+  }
+  
+  .container {
+    width: 75vw;
+    margin: 0 auto;
+  
+    @include respond(tab-port) {
+      width: 85vw;
+    }
+  
+    &__flex {
+      display: flex;
+      flex-direction: column;
+    }
+  }

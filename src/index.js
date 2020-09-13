@@ -1,2 +1,2 @@
-import './sass/main.css';
+import './sass/main.scss';
 import './img/webpack.png'

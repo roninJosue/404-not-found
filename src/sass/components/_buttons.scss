@@ -1,0 +1,103 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all .2s;
+      position: relative;
+      font-size: $default-font-size;
+      font-family: 'Gelion', sans-serif;
+      line-height: $default-line-height;
+  
+  
+      //Change for the <button>
+      border: none;
+      cursor: pointer;
+    }
+  
+    &:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black,.2);
+  
+      &::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+  
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+  
+    &:after{
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+    }
+  
+    &--white{
+      background-color: $color-white;
+      color: $color-grey-dark;
+  
+      &:after{
+        background-color: $color-white;
+      }
+    }
+  
+    &--outline{
+      background-color: transparent;
+      border: 2px solid $border-color-btn!important;
+      color: $color-btn-outline;
+  
+      &:after{
+        /*background-color: $color-btn-outline;*/
+        border: 2px solid $color-btn-outline;
+      }
+  
+      &-menu {
+        @include respond(phone){
+          padding: .5rem 3rem!important;
+          animation: none!important;
+        }
+      }
+    }
+  
+    &--red{
+      background-color: $color-btn-outline;
+      color: $color-white;
+  
+      &:after{
+        background-color: $color-btn-outline;
+      }
+    }
+  
+    &--red-2 {
+      background-color: rgba(250, 86, 82, 0.15);
+      color: $color-alert;
+      text-transform: capitalize;
+      font-weight: bold;
+  
+      &:after{
+        background-color: rgba(250, 86, 82, 0.15);
+      }
+    }
+  
+    &--animated{
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards;
+    }
+  }
+  

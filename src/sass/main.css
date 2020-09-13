@@ -1,9 +1,0 @@
-h1 {
-    font-size: 10rem;
-    color: orangered;
-}
-
-body {
-    background: url('./../img/webpack.png');
-    background-repeat: no-repeat;
-}

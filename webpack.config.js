@@ -1,8 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+    mode: process.env.NODE_ENV,
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
@@ -11,11 +13,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css/,
+                test: /\.scss$/,
                 use: [
-                    'style-loader',
-                    'css-loader'
-                ]
+                    process.env.NODE_ENV !== 'production' 
+                        ? 'style-loader' 
+                        : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader',
+                ],
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
@@ -37,5 +42,8 @@ module.exports = {
             title: 'App',
             template: './src/index.html'
         }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css'
+        })
     ]
 }
