@@ -70,7 +70,7 @@
     font-size: 1.7rem;
     line-height: 3rem;
     text-transform: capitalize;
-    color: $color-tertiary;
+    color: $color-text-primary;
   
     @include respond(phone){
       width: 100%!important;
@@ -90,14 +90,9 @@
     }
   }
   
-  .separator {
-    background-color: $color-separator;
-    height: 1.4rem;
-    width: .22rem;
-  }
   
   .container {
-    width: 75vw;
+    width: 90vw;
     margin: 0 auto;
   
     @include respond(tab-port) {
@@ -108,4 +103,13 @@
       display: flex;
       flex-direction: column;
     }
+  }
+
+  .u-uppercase {
+    text-transform: uppercase;
+  }
+
+  .container-flex {
+    display: flex;
+    flex-direction: column;
   }

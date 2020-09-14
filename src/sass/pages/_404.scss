@@ -1,0 +1,73 @@
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: -.08em;
+    font-family: 'Inconsolata';
+}
+
+.footer {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: $color-primary;
+    text-align: center;
+}
+
+.scarecrow {
+    background: url('./../img/Scarecrow.png') no-repeat 50% 50%;
+    background-size: contain;
+    height: 90vh;
+    width: 50%;
+
+    flex: 1 50%;
+
+    @include respond(phone){
+        flex: none;
+        height: 40vh;
+        width: 90%;
+    }
+}
+
+.text {
+    flex: 1 50%;
+    @include respond(phone){
+        flex: none;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+
+    @include respond(phone){
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 6.4rem;
+        line-height: 95px;
+        font-family: 'Space Mono';
+
+        @include respond(phone){
+            font-size: 37px;
+            line-height: 65px;
+        }
+    }
+
+    p {
+        font-size: 24px;
+        width: 80%;
+        line-height: 36px;
+        font-family: 'Space Mono';
+        color: $color-gray-2;
+
+        @include respond(phone){
+            font-size: 18px;
+            line-height: 27px;
+            width: 100%;
+        }
+    }
+}

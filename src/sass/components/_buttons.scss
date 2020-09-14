@@ -5,11 +5,10 @@
       text-decoration: none;
       padding: 1.5rem 4rem;
       display: inline-block;
-      border-radius: 10rem;
       transition: all .2s;
       position: relative;
       font-size: $default-font-size;
-      font-family: 'Gelion', sans-serif;
+      font-family: 'Space Mono', sans-serif;
       line-height: $default-line-height;
   
   
@@ -47,52 +46,10 @@
       z-index: -1;
       transition: all .4s;
     }
-  
-    &--white{
-      background-color: $color-white;
-      color: $color-grey-dark;
-  
-      &:after{
-        background-color: $color-white;
-      }
-    }
-  
-    &--outline{
-      background-color: transparent;
-      border: 2px solid $border-color-btn!important;
-      color: $color-btn-outline;
-  
-      &:after{
-        /*background-color: $color-btn-outline;*/
-        border: 2px solid $color-btn-outline;
-      }
-  
-      &-menu {
-        @include respond(phone){
-          padding: .5rem 3rem!important;
-          animation: none!important;
-        }
-      }
-    }
-  
-    &--red{
-      background-color: $color-btn-outline;
+
+    &--black {
+      background-color: $color-primary;
       color: $color-white;
-  
-      &:after{
-        background-color: $color-btn-outline;
-      }
-    }
-  
-    &--red-2 {
-      background-color: rgba(250, 86, 82, 0.15);
-      color: $color-alert;
-      text-transform: capitalize;
-      font-weight: bold;
-  
-      &:after{
-        background-color: rgba(250, 86, 82, 0.15);
-      }
     }
   
     &--animated{
@@ -100,4 +57,5 @@
       animation-fill-mode: backwards;
     }
   }
+
   
