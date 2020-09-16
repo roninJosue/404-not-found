@@ -1,3 +1,5 @@
 import './sass/main.scss';
 
-import './img/Scarecrow.png';
+import ScareCrow from './img/Scarecrow.png';
+
+console.log(ScareCrow);

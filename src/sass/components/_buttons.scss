@@ -3,7 +3,7 @@
     &:link,
     &:visited{
       text-decoration: none;
-      padding: 1.5rem 4rem;
+      padding: 2.5rem 4rem;
       display: inline-block;
       transition: all .2s;
       position: relative;
@@ -53,7 +53,7 @@
     }
   
     &--animated{
-      animation: moveInBottom .5s ease-out .75s;
+      animation: moveInBottom .5s ease-out;
       animation-fill-mode: backwards;
     }
   }

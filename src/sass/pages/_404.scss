@@ -19,8 +19,9 @@
 .scarecrow {
     background: url('./../img/Scarecrow.png') no-repeat 50% 50%;
     background-size: contain;
-    height: 90vh;
-    width: 50%;
+    height: 70vh;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    margin-right: 5rem;
 
     flex: 1 50%;
 
@@ -28,6 +29,7 @@
         flex: none;
         height: 40vh;
         width: 90%;
+        margin: 0;
     }
 }
 
