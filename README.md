@@ -40,7 +40,7 @@
 
 Hello there, this is my solution for the [challange 404 not found](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY):
 
-- The demo of the solution can see it [here](http:google.com.ni)
+- The demo of the solution can see it [here](https://404-not-found-challange.netlify.app/)
 - I enjoy solving this challenge, applying newly learned knowledge
 - I apply Sass + Webpack to solve this challange
 
